@@ -1,0 +1,11 @@
+0: include('schema')
+1: include('schema')
+
+---
+schema:
+    memory_type: enum('volatile','persistent')
+    fam_path: str()
+    rpc_interface: ip(version=4)
+    port_no: enum(8793,8794)
+    libfabric_port: enum(7500, 7501)
+    if_device: enum( 'eth0', 'eth1')
